@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Calculadora</title>
+</head>
+<body style="user-select:none;">
+    <main>
+      <div class="body">
+        <input type="text" name="display" id="display" disabled class="display" placeholder="0">
+        <div class="numbers_actions">
+          <div class="row">
+            <button class="clear" onclick="action('clear')"  id="limparDisplay">C</button>
+            <button onclick="action('backspace')" id="backspace"><img src="assets/svg/backspace.svg" alt="" width="25px"></button>
+            <button onclick="action('calc', '÷')" class="calc" id="operadorDividir">÷</button>
+            <button onclick="action('calc', '%')" class="calc" id="porcentagem">%</button>
+            <button onclick="action('calc', '^')" class="calc"><img src="assets/svg/exponent_icon_138629.svg"  alt=""></button>
+            <button onclick="action('calc', '√')" class="calc" id="raiz">²<img src="assets/svg/radical.svg" width="25" alt=""></button>
+            <button onclick="action('calc', '×')" class="calc" id="operadorMultiplicar">x</button>
+          </div>
+          <div class="row">
+            <button onclick="action('number', 7)" class="number" id="tecla7">7</button>
+            <button onclick="action('number', 8)" class="number" id="tecla8">8</button>
+            <button onclick="action('number', 9)" class="number" id="tecla9">9</button>
+            <button onclick="action('calc', '+')" class="calc" id="operadorSomar">+</button>
+          </div>
+          <div class="row">
+            <button onclick="action('number', 4)" class="number" id="tecla4">4</button>
+            <button onclick="action('number', 5)" class="number" id="tecla5">5</button>
+            <button onclick="action('number', 6)" class="number" id="tecla6">6</button>
+            <button onclick="action('calc', '-')" class="calc" id="operadorSubtrair">-</button>
+          </div>
+          <div class="row">
+            <button onclick="action('number', 1)" class="number" id="tecla1">1</button>
+            <button onclick="action('number', 2)" class="number" id="tecla2">2</button>
+            <button onclick="action('number', 3)" class="number" id="tecla3">3</button>
+            <button onclick="action('=')" class="igual"  id="igual"> =</button>
+          </div>
+          <div class="row" style="margin-top:-60px;">
+            <button onclick="action('number', 0)" class="zero number"  id="tecla0">0</button>
+            <button onclick="action('decimal', ',')"  id="decimal">,</button>
+          </div>
+      </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
