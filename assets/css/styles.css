@@ -9,6 +9,12 @@ body {
   background-color: #232020;
 }
 
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: aliceblue;
+}
+
 main {
   width: 100%;
   display: flex;
