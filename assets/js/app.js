@@ -143,7 +143,7 @@ function action(type, value){
   }
   if(type === '='){
     if(display.value.length>0 && last != '÷' && last != '×' && last != '-' && last != ',' && last != '√' && last != '+'){
-      let result = display.value.replace(/,/g,'.').replace(/\^/g, '**').replace(/÷/g, '/').replace(/×/g, '*').replace('√', '').replace('%', '/ 100 *')
+      let result = display.value.split('.').join('').replace(/,/g,'.').replace(/\^/g, '**').replace(/÷/g, '/').replace(/×/g, '*').replace('√', '').replace('%', '/ 100 *')
       if(display.value.includes('√')){
         result = eval(Math.sqrt(result));
       }
